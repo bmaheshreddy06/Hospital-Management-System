@@ -1,0 +1,47 @@
+ #include <stdio.h>
+
+int main()
+{  
+    char name[100],gender[10],father_name[15],address[50];
+    int age,mobile,yes;
+    float payment=0,treatment_fees,medicine_fees;
+    printf("*********SATHYAM HOSPITAL******\n");
+    printf("-----REGISTRATION FORM-----\n");
+    printf("enter the patient name   :");
+    gets(name);
+    printf("enter the patient age    :");
+    scanf("%d",&age);
+    printf("enter the gender         :");
+    scanf("%s",gender);
+    printf("enter the father's name  :");
+    scanf("%s",father_name);
+    printf("enter the mobile number  :");
+    scanf("%ld",&mobile);
+    printf("enter the current address :");
+    scanf("%s",address);
+    printf("@@@@@@REGISTRATION IS SUCCESSFULLY COMPLETED@@@@@@\n");
+    printf("YOUR TOKEN ID:999\n");
+    printf("PLEASE BE SIT,DOCTOR WILL BE CALL..!\n");
+    printf("Doctor is calling :");
+    scanf("%d",&yes);
+    if(yes==0)
+    {
+        printf("tell me what's u r prblm.\n");
+        printf("doctor is giving to the treatment.\n");
+        printf("enter the treatment_fees     :");
+        scanf("%f",&treatment_fees);
+        printf("enter the medicine_fees fees :");
+        scanf("%f",&medicine_fees);
+        payment=treatment_fees+medicine_fees;
+        printf("total amount is              :%f",payment);
+        printf("you may go know.\n");
+        printf("****THANK YOU****");
+    }
+    else
+    {  
+        printf("please wait some time patient is there inside,");
+        printf("you have to wait some time.");
+    }
+    return 0;
+}
+
